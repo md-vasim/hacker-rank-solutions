@@ -1,11 +1,28 @@
-l = [1,1,0,-1,-1]
+#!/bin/python3
 
-negs = [v for v in l if v < 0]
-poss = [v for v in l if v > 0]
-zeros = [v for v in l if v == 0]
+import math
+import os
+import random
+import re
+import sys
 
-print(l)
+#
+# Complete the 'timeConversion' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts STRING s as parameter.
+#
 
-print(f'{len(poss)/len(l):.6f}')
-print(f'{len(negs)/len(l):.6f}')
-print(f'{len(zeros)/len(l):.6f}')
+def timeConversion(s):
+    # Write your code here
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = timeConversion(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
